@@ -7,6 +7,12 @@ var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 
+
+
+
+
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -18,6 +24,10 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
+
 
 
 
@@ -60,9 +70,31 @@ var uppercase = confirm("Would you like Uppercases?");
 
 
 
-// for-loop
-// for (var i = 0; i < password.length; i++) {
-//      password += characters[Math.floor(Math.random() * characters.length)];
-//    }
 
-// input = confirm("Choose your password criteria");
+
+
+
+
+for (var i = 0; i < password.length; i++) {
+  password += characters[Math.floor(Math.random() * characters.length)];
+}
+
+
+
+
+
+
+
+
+
+  // Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
