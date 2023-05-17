@@ -1,19 +1,25 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var numbers = ["0123456789"];
-var specialCharacters = ["!@#$%^&*+?></"];
-var lowercase = ["abcdefghijklmnopqrstuvwxyz"]; 
-var uppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-
+var password = "";
+var passwordLength = "";
+var numbers = "0123456789";
+var specialCharacters = "!@#$%^&*+?></";
+var lowercase = "abcdefghijklmnopqrstuvwxyz"; 
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 function generatePassword(length) {
-  var password = "8 to 128 characters";
-  var allCharacters = numbers + specialCharacters + lowercase + uppercase;
+  password = "";
+  passwordLength = "";
+ 
+  var passwordLength = prompt("How many characters would you like between 8 - 128?");
+   if (passwordLength >= 8 && passwordLength <= 128) {
+       password.length = passwordLength;
+   }
+   else {
+    alert("Please choose length between 8 - 128 characters");
+   }
 
-  for (var i = 0; i < password.length; i++) {
-    password += characters[Math.floor(Math.random() * characters.length)];
-  }
 
  var characters = "";
  numbers = "0123456789";
@@ -54,6 +60,7 @@ function generatePassword(length) {
  for (var i = 0; i < password.length; i++) {
   password += characters[Math.floor(Math.random() * characters.length)];
  }
+
 
   return password;
 
