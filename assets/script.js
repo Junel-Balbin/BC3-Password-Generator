@@ -1,63 +1,46 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var password = "";
-var characters = "";
-var passwordLength = "";
-var numbers = "0123456789";
-var specialCharacters = "!@#$%^&*+?></";
-var lowercase = "abcdefghijklmnopqrstuvwxyz"; 
-var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
 function generatePassword(length) {
-  password = "";
-  passwordLength = "";
+
+ var password = "";
+ var characters = "";
+ var passwordLength = "";
+ var numbers = "0123456789";
+ var specialCharacters = "!@#$%^&*+?></";
+ var lowercase = "abcdefghijklmnopqrstuvwxyz"; 
+ var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
  
-  var passwordLength = prompt("How many characters would you like between 8 - 128?");
-   if (passwordLength >= 8 && passwordLength <= 128) {
-       password.length = passwordLength;
+ var passwordLength = prompt("How many characters would you like between 8 - 128?");
+   if (passwordLength < 8 || passwordLength > 128) {
+      return "Please choose length between 8 - 128.";
+   }  else if (isNaN(passwordLength)) {
+      passwordLength = prompt("Please enter a valid number of length.");
    }
    else {
-    alert("Please choose length between 8 - 128 characters");
+      alert("Your password will be " + passwordLength + " characters long");
    }
 
-
- var characters = "";
- numbers = "0123456789";
-
  var numbers = confirm("Would you like numbers?");
-  if (numbers) {
-  characters += "0123456789";
+  if (numbers === true) {
+    alert("Your password will have numbers.");  
  }
 
-
- var characters = "";
- specialCharacters = "!@#$%^&*+?></";
-
  var specialCharacters = confirm("Would you like Special Characters?");
-   if (specialCharacters) {
-    characters += "!@#$%^&*+?></";
+   if (specialCharacters === true) {
+    alert("Your password will have Special Characters.");
   }
-
-
- var characters = "";
- lowercase = "abcdefghijklmnopqrstuvwxyz";
 
  var lowercase = confirm("Would you like Lowercases?");
-  if (lowercase) {
-    characters += "abcdefghijklmnopqrstuvwxyz";
+  if (lowercase === true) {
+    alert("Your password will have Lowercases.");
   }
-
-
- var characters = "";
- uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
  var uppercase = confirm("Would you like Uppercases?");
-  if (uppercase) {
-    characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  if (uppercase === true) {
+    alert("Your password will have Uppercases");
   }
-
-
+  
  for (var i = 0; i < passwordLength; i++) {
   password += characters[Math.floor(Math.random() * characters.length)];
  }
