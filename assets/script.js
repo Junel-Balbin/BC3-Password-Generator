@@ -2,6 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 var password = "";
+var characters = "";
 var passwordLength = "";
 var numbers = "0123456789";
 var specialCharacters = "!@#$%^&*+?></";
@@ -57,7 +58,7 @@ function generatePassword(length) {
   }
 
 
- for (var i = 0; i < password.length; i++) {
+ for (var i = 0; i < passwordLength; i++) {
   password += characters[Math.floor(Math.random() * characters.length)];
  }
 
