@@ -15,7 +15,7 @@ var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
  
 // Prompt for Password Length.  With "if, else if statements" and alerts.
  var passwordLength = prompt("How many characters would you like between 8 - 128?");
-  if (passwordLength < 8 || passwordLength > 128) {
+  if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
   return "IMPORTANT. PLEASE SELECT A LENGTH BETWEEN 8 - 128.";
   }  else if (isNaN(passwordLength)) {
      passwordLength = prompt("Please enter a valid number of length between 8 - 128.");
