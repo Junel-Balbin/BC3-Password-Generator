@@ -15,10 +15,10 @@
 * Accessible on any mobile device and tablet.
 
 ## Usage.
+* Click or Press Generate Password to start.
+<img src="./assets/images/gpbutton.png">
 * Selecting Cancel = NO.  Selecting OK = YES.
 <img src="./assets/images/yn.png">
-
-* It is highly recommended to refresh page when regenerating a new password.
 
 * Selecting a number below length of 8 or numbers over 128 will give you a message.  Inputting a letter instead of a number will also give a message. "IMPORTANT.  PLEASE SELECT A LENGTH BETWEEN 8 - 128."
 <img src="./assets/images/invalidlength.png">

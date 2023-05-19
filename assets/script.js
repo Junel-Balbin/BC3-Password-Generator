@@ -2,16 +2,16 @@
 var generateBtn = document.querySelector("#generate");
 
 // Character Arrays.
-var password = "";
-var characters = "";
-var passwordLength = "";
 var numbers = "0123456789";
 var specialCharacters = "!@#$%^&*=[]{}/><;:";
 var lowercase = "abcdefghijklmnopqrstuvwxyz"; 
 var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
- 
+
 // Main Functions and conditional statements.
 function generatePassword() {
+  // Reset the characters variable.
+  var characters = "";
+
   // Prompt for Password Length. With "if, else if statements" and alerts.
   var passwordLength = prompt("How many characters would you like between 8 - 128?");
   if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
