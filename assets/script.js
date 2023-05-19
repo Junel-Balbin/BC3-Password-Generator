@@ -41,7 +41,7 @@ function generatePassword() {
   }
   
   // Confirm for Lowercase. With "if, else if statements" and alerts.
-  var includeLowercase = confirm("Would you like Lowercases?");
+  var includeLowercase = confirm("Would you like Lowercase?");
   if (includeLowercase) {
     characters += lowercase;
     alert("Your password will have Lowercase.");

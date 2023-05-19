@@ -5,6 +5,8 @@
 ## Description.
 * Simple, easy to use [Password Generator](https://junel-balbin.github.io/Password-Generator/).
 
+* Updated the look of the original page. 
+
 * For this challenge assignment.  I found it difficult to know where to start but in the process, I learned a lot but still need to study more to be confident in my abilities.
 
 * As a beginner to JavaScript.  I am unsure of how everything works but I am sure that I will learn more with time and practice.
@@ -17,6 +19,7 @@
 ## Usage.
 * Click or Press Generate Password to start.
 <img src="./assets/images/gpbutton.png">
+
 * Selecting Cancel = NO.  Selecting OK = YES.
 <img src="./assets/images/yn.png">
 
