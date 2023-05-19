@@ -14,8 +14,7 @@ body,
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(109,9,121,1) 29%, rgba(0,212,255,1) 75%);
+  background: rgb(247, 250, 251);
 }
 
 .wrapper {
@@ -96,9 +95,9 @@ header {
 }
 
 .btn:hover {
-  background-color: rgb(12, 187, 222);
-  box-shadow: 0 0 2px rgb(12, 187, 222), 0 0 6px rgb(12, 187, 222), 0 0 10px rgb(12, 187, 222);
-  transition: 1s;
+  background-color: rgb(15, 145, 171);
+  box-shadow: 0 0 2px rgb(15, 145, 171), 0 0 4px rgb(15, 145, 171), 0 0 6px rgb(15, 145, 171);
+  transition: 0.5s;
 }
 
 button[disabled] {
